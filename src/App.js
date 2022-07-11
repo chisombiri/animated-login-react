@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+// import User from './components/user/User';
+// import { users } from './data';
+
+import Event from './components/event/Event';
 
 function App() {
+  const link = "https://google.com";
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app-home'>
+      {/* <h1>List Of Users</h1>
+        {users.map((user) => {
+          return(
+            <User key={user.id} name={user.name} age={user.age} job={user.job}/>
+          )
+        })
+        } */}
+
+        <Event />
+      <a href={link}> Go to google </a>
     </div>
-  );
+  )
 }
 
 export default App;
